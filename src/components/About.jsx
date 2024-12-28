@@ -41,7 +41,7 @@ const About = () => {
         >
           My name is{" "}
           <span className="font-bold text-purple-500">Rebiya Musema</span>, a
-          21-year-old third-year Information System student at AAU. With a deep
+          20-year-old third-year Information System student at AAU. With a deep
           passion for technology, I specialize in web development and artificial
           intelligence. My academic journey and hands-on projects have equipped
           me with a robust understanding of cutting-edge tech, driving my
@@ -95,7 +95,7 @@ const About = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 2 }}
-        className="flex flex-wrap  items-center gap-5 mx-16 mt-12 py-8 text-6xl"
+        className="flex flex-wrap justify-center items-center gap-5 mx-16 mt-12 py-8 text-6xl"
       >
         <h2 className="text-3xl font-bold text-gray-300 mb-4 w-full text-center">
           Tech Stack
