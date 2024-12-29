@@ -32,8 +32,8 @@ const projects = [
     title: "Project #3",
     description: "evangadi Question and answer platform using React and Mysql",
     links: {
-      site: "#",
-      github: "#"
+      site: "https://rebiyaevangadi.netlify.app/",
+      github: "https://github.com/Rebiya/Frontend-EvangadiForum"
     }
   },
   {
