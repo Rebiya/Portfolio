@@ -15,7 +15,9 @@ import {
   SiExpress,
   SiTailwindcss,
   SiJquery,
-  SiMongodb
+  SiMongodb,
+  SiStripe,
+  SiFirebase
 } from "react-icons/si";
 
 const About = () => {
@@ -95,7 +97,7 @@ const About = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 2 }}
-        className="flex flex-wrap justify-center items-center gap-5 mx-16 mt-12 py-8 text-6xl"
+        className="flex flex-wrap justify-center items-center gap-8 mx-20 mt-12 py-8 text-6xl"
       >
         <h2 className="text-3xl font-bold text-gray-300 mb-4 w-full text-center">
           Tech Stack
@@ -114,6 +116,8 @@ const About = () => {
         <DiMysql className="text-orange-600" />
         <SiMongodb className="text-green-600" />
         <FaAws className="text-orange-400" />
+        <SiStripe className="text-blue-500" />
+        <SiFirebase className="text-yellow-600" />
       </motion.div>
 
       <div className="absolute inset-0 hidden md:block">
