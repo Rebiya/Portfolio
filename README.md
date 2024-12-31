@@ -25,18 +25,22 @@ This is my personal portfolio website showcasing my skills, projects, and experi
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/portfolio.git
+   
 2. Navigate to the project directory:
-```bash
-cd portfolio
+  ```bash
+   cd portfolio
+
 3. Install dependencies:
-```bash
-npm install
+  ```bash
+   npm install
+
 4. Start the development server:
-```bash
-npm run dev
+  ```bash
+   npm run dev
 5.Open your browser at http://localhost:3000 to view the website locally.
-##Deployment
-The portfolio is deployed at rebiyamusema.com.
+
+##- **Deployment**
+    The portfolio is deployed at rebiyamusema.com.
 
 ##Scripts
 npm run dev: Start the development server.
