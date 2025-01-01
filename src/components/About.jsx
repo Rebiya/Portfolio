@@ -43,7 +43,7 @@ const About = () => {
         >
           My name is{" "}
           <span className="font-bold text-purple-500">Rebiya Musema</span>, a
-          20-year-old third-year Information System student at AAU. With a deep
+          21-year-old third-year Information System student at AAU. With a deep
           passion for technology, I specialize in web development and artificial
           intelligence. My academic journey and hands-on projects have equipped
           me with a robust understanding of cutting-edge tech, driving my

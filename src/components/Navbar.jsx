@@ -24,6 +24,7 @@ const Navbar = () => {
           offset={-70}
           duration={500}
           onClick={closeNav}
+          className="hover:text-purple-400 transition-opacity duration-300"
         >
           Rebu.M
         </Link>
@@ -31,7 +32,10 @@ const Navbar = () => {
         <ul className="hidden md:flex gap-12 z-10 cursor-pointer">
           {["home", "about", "portfolio", "experience", "contact"].map(
             (section) => (
-              <li key={section}>
+              <li
+                key={section}
+                className="hover:text-purple-400 transition-opacity duration-300"
+              >
                 <Link to={section} smooth={true} offset={-70} duration={500}>
                   {section.charAt(0).toUpperCase() + section.slice(1)}
                 </Link>

@@ -10,21 +10,6 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    const email = e.target.email.value; // Get the email input value
-    const allowedEmail = "rebum.19@gmail.com";
-
-    // Check if the entered email matches the allowed email
-    if (email !== allowedEmail) {
-      Toastify({
-        text: "you are only allowed to send the message to 'rebum.19@gmail.com'.",
-        duration: 3000,
-        gravity: "top",
-        position: "right",
-        backgroundColor: "linear-gradient(to right, #ff5f6d, #ffc371)"
-      }).showToast();
-      return; // Prevent the form submission
-    }
-
     emailjs
       .sendForm(
         "service_q0jj7re",
@@ -81,7 +66,7 @@ const Contact = () => {
             </div>
 
             <div className="flex mt-10 items-center gap-7">
-              <div className="bg-gray-800/40 p-4 rounded-lg">
+              <div className="bg-gray-800/40 p-4 rounded-lg hover:scale-105 hover:shadow-lg hover:shadow-purple-500 transition-transform duration-300">
                 <h3 className="md:text-4xl text-2xl font-semibold text-white">
                   5<span>+</span>
                 </h3>
@@ -90,7 +75,7 @@ const Contact = () => {
                 </p>
               </div>
 
-              <div className="bg-gray-800/40 p-5 rounded-lg">
+              <div className="bg-gray-800/40 p-5 rounded-lg hover:scale-105 hover:shadow-lg hover:shadow-purple-500 transition-transform duration-300">
                 <h3 className="md:text-4xl text-2xl font-semibold text-white">
                   6 M<span>+</span>
                 </h3>
@@ -99,7 +84,7 @@ const Contact = () => {
                 </p>
               </div>
 
-              <div className="bg-gray-800/40 p-5 rounded-lg">
+              <div className="bg-gray-800/40 p-5 rounded-lg hover:scale-105 hover:shadow-lg hover:shadow-purple-500 transition-transform duration-300">
                 <h3 className="md:text-4xl text-2xl font-semibold text-white">
                   3<span>+</span>
                 </h3>
@@ -145,7 +130,7 @@ const Contact = () => {
             />
             <button
               type="submit"
-              className="w-full py-3 rounded-md text-gray-100 font-semibold text-xl bg-primary-color"
+              className="w-full py-3 rounded-md text-gray-100 font-semibold text-xl bg-primary-color hover:bg-purple-700 hover:shadow-md hover:shadow-purple-500 transition-all duration-300"
             >
               Send Message
             </button>

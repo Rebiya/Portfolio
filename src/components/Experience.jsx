@@ -49,10 +49,10 @@ const Experience = () => {
               whileInView="visible"
               viewport={{ once: false, amount: 0.3 }}
               transition={{ duration: 1 }}
-              className="border border-purple-600 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 bg-purple-700/10 flex flex-col items-start justify-between"
+              className="border border-purple-600 p-6 cursor-pointer rounded-lg shadow-md bg-purple-700/10 flex flex-col items-start justify-between hover:shadow-purple-50 hover:shadow-xl hover:border-purple-300 transition duration-300 "
               style={{
                 height: "200px",
-                minWidth: "250px" 
+                minWidth: "250px"
               }}
             >
               <h2 className="text-gray-100 sm:text-sm md:text-lg font-semibold mb-2">
