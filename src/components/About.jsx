@@ -1,36 +1,27 @@
 import React from "react";
 import { motion } from "framer-motion";
+import SkillCard from "./SkillCard";
 import ShinyEffect from "./ShinyEffect";
-import {
-  DiCss3,
-  DiHtml5,
-  DiJavascript1,
-  DiReact,
-  DiMysql
-} from "react-icons/di";
-import { FaBootstrap, FaNodeJs, FaAws } from "react-icons/fa";
-import {
-  SiCplusplus,
-  SiDotnet,
-  SiExpress,
-  SiTailwindcss,
-  SiJquery,
-  SiMongodb,
-  SiStripe,
-  SiFirebase
-} from "react-icons/si";
+
+const skills = [
+  { title: "HTML5", proficiency: 90 },
+  { title: "CSS3", proficiency: 85 },
+  { title: "JavaScript", proficiency: 80 },
+  { title: "React", proficiency: 75 },
+  { title: "Node.js", proficiency: 70 },
+  { title: "Tailwind CSS", proficiency: 80 },
+  { title: "Bootstrap", proficiency: 70 },
+  { title: "MySQL", proficiency: 80 }
+];
 
 const About = () => {
   return (
-    <div
-      className="mt-16 mb-16 w-full mx-auto relative"
-      style={{ backgroundColor: "transparent" }}
-    >
+    <div className="mt-16 mb-16 w-full mx-auto relative bg-transparent">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="text-gray-200 bg-opacity-0 backdrop-blur-sm p-6"
+        className="text-[var(--text-color)] bg-opacity-0 backdrop-blur-sm p-6"
       >
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-purple-400 text-center">
           About Me
@@ -92,32 +83,23 @@ const About = () => {
         </motion.div>
       </motion.div>
 
-      {/* Tech Stack Section */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 2 }}
-        className="flex flex-wrap justify-center items-center gap-8 mx-20 mt-12 py-8 text-6xl"
+        className="grid grid-cols-1 sm:grid-cols-2 gap-8 px-4 mt-12"
       >
-        <h2 className="text-3xl font-bold text-gray-300 mb-4 w-full text-center">
+        <h2 className="text-3xl font-bold text-[var(--text-color)] mb-4 w-full text-center">
           Tech Stack
         </h2>
-        <DiHtml5 className="text-orange-600" />
-        <DiCss3 className="text-blue-600" />
-        <DiJavascript1 className="text-yellow-500" />
-        <DiReact className="text-blue-500" />
-        <FaNodeJs className="text-green-500" />
-        <SiCplusplus className="text-blue-800" />
-        <SiDotnet className="text-purple-500" />
-        <SiExpress className="text-gray-400" />
-        <SiTailwindcss className="text-teal-400" />
-        <FaBootstrap className="text-purple-600" />
-        <SiJquery className="text-blue-700" />
-        <DiMysql className="text-orange-600" />
-        <SiMongodb className="text-green-600" />
-        <FaAws className="text-orange-400" />
-        <SiStripe className="text-blue-500" />
-        <SiFirebase className="text-yellow-600" />
+        <br />
+        {skills.map((skill, index) => (
+          <SkillCard
+            key={index}
+            title={skill.title}
+            proficiency={skill.proficiency}
+          />
+        ))}
       </motion.div>
 
       <div className="absolute inset-0 hidden md:block">

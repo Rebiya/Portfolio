@@ -28,13 +28,18 @@ const experiences = [
     company: "MiniMarket app as FreeLancer",
     period: "2025",
     description: "Description of the mini market and goods Static website."
+  },
+  {
+    company: "E-commerce app as FreeLancer for Algham Company",
+    period: "2025",
+    description: "Description of the mini market and goods Static website."
   }
 ];
 
 const Experience = () => {
   return (
     <div className="p-8 max-w-[380px] md:max-w-[900px] mx-auto">
-      <h1 className="text-4xl text-gray-200 font-bold text-center mb-12">
+      <h1 className="text-4xl text-[var(--text-color)] font-bold text-center mb-12">
         Experience
       </h1>
       <motion.div
@@ -55,11 +60,13 @@ const Experience = () => {
                 minWidth: "250px"
               }}
             >
-              <h2 className="text-gray-100 sm:text-sm md:text-lg font-semibold mb-2">
+              <h2 className="text-[var(--text-color)] sm:text-sm md:text-lg font-semibold mb-2">
                 {experience.company}
               </h2>
-              <p className="text-gray-300 text-sm mb-4">{experience.period}</p>
-              <p className="text-gray-400 text-base pb-20">
+              <p className="text-[var(--text-color)] text-sm mb-4">
+                {experience.period}
+              </p>
+              <p className="text-[var(--text-color)] text-base pb-20">
                 {experience.description}
               </p>
             </motion.div>

@@ -10,6 +10,20 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    const message = e.target.message.value;
+    const wordCount = message.trim().split(/\s+/).length;
+
+    if (wordCount > 500) {
+      Toastify({
+        text: "Message cannot exceed 500 words.",
+        duration: 3000,
+        gravity: "top",
+        position: "right",
+        backgroundColor: "linear-gradient(to right, #ff5f6d, #ffc371)"
+      }).showToast();
+      return;
+    }
+
     emailjs
       .sendForm(
         "service_q0jj7re",
@@ -48,7 +62,7 @@ const Contact = () => {
       <Reveal>
         <div className="grid md:grid-cols-2 place-items-center">
           <div>
-            <div className="text-gray-300 my-3">
+            <div className="text-[var(--text-color)] my-3">
               <h3 className="text-4xl font-semibold mb-5">
                 Contact <span>Me</span>
               </h3>
@@ -67,7 +81,7 @@ const Contact = () => {
 
             <div className="flex mt-10 items-center gap-7">
               <div className="bg-gray-800/40 p-4 rounded-lg hover:scale-105 hover:shadow-lg hover:shadow-purple-500 transition-transform duration-300">
-                <h3 className="md:text-4xl text-2xl font-semibold text-white">
+                <h3 className="md:text-4xl text-2xl font-semibold text-[var(--text-color)]">
                   5<span>+</span>
                 </h3>
                 <p className="text-xs md:text-base">
@@ -76,19 +90,19 @@ const Contact = () => {
               </div>
 
               <div className="bg-gray-800/40 p-5 rounded-lg hover:scale-105 hover:shadow-lg hover:shadow-purple-500 transition-transform duration-300">
-                <h3 className="md:text-4xl text-2xl font-semibold text-white">
+                <h3 className="md:text-4xl text-2xl font-semibold text-[var(--text-color)]">
                   6 M<span>+</span>
                 </h3>
-                <p className="text-xs md:text-base">
+                <p className="text-xs md:text-base text-[var(--text-color)]">
                   <span>years of experience</span>
                 </p>
               </div>
 
               <div className="bg-gray-800/40 p-5 rounded-lg hover:scale-105 hover:shadow-lg hover:shadow-purple-500 transition-transform duration-300">
-                <h3 className="md:text-4xl text-2xl font-semibold text-white">
+                <h3 className="md:text-4xl text-2xl font-semibold text-[var(--text-color)]">
                   3<span>+</span>
                 </h3>
-                <p className="text-xs md:text-base">
+                <p className="text-xs md:text-base text-[var(--text-color)]">
                   <span>happy clients</span>
                 </p>
               </div>
@@ -100,7 +114,7 @@ const Contact = () => {
             className="max-w-6xl p-5 md:p-12"
             id="form"
           >
-            <p className="text-gray-100 font-bold text-xl mb-2">
+            <p className="text-[var(--text-color)] font-bold text-xl mb-2">
               Let´s connect!
             </p>
             <input
@@ -130,7 +144,7 @@ const Contact = () => {
             />
             <button
               type="submit"
-              className="w-full py-3 rounded-md text-gray-100 font-semibold text-xl bg-primary-color hover:bg-purple-700 hover:shadow-md hover:shadow-purple-500 transition-all duration-300"
+              className="w-full py-3 rounded-md text-[var(--text-color)] font-semibold text-xl bg-primary-color hover:bg-purple-700 hover:shadow-md hover:shadow-purple-500 transition-all duration-300"
             >
               Send Message
             </button>
