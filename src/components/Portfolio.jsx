@@ -4,7 +4,9 @@ import project2 from "../assets/amazon.png";
 import project4 from "../assets/evangadi1.jpg";
 import project5 from "../assets/garage.jpeg";
 import project6 from "../assets/images.jpeg";
-import { AiFillGithub, AiOutlineGithub } from "react-icons/ai";
+import project7 from "../assets/kid.avif"
+import project8 from "../assets/businessL.jpeg";
+import { AiFillGithub, AiOutlineGithub, AiOutlineYoutube } from "react-icons/ai";
 import Reveal from "./Reveal";
 
 const projects = [
@@ -14,7 +16,8 @@ const projects = [
     description: "Netflix-Clone fullStack development using React.js",
     links: {
       site: "https://rebiya.github.io/NetflixClone/",
-      github: "https://rebiya.github.io/NetflixClone"
+      github: "https://rebiya.github.io/NetflixClone",
+      utube:"https://youtu.be/tY4ULnryZ8o"
     }
   },
   {
@@ -24,7 +27,8 @@ const projects = [
       "A fullstack application Amazon-Clone built with React.js and Firebase.",
     links: {
       site: "https://rebu-amazon.netlify.app/",
-      github: "https://github.com/Rebiya/Amazon-Clone"
+      github: "https://github.com/Rebiya/Amazon-Clone",
+      utube:"https://youtu.be/rfYiQ77jWIY"
     }
   },
   {
@@ -33,7 +37,8 @@ const projects = [
     description: "evangadi Question and answer platform using React and Mysql",
     links: {
       site: "https://rebiyaevangadi.netlify.app/",
-      github: "https://github.com/Rebiya/Frontend-EvangadiForum"
+      github: "https://github.com/Rebiya/Frontend-EvangadiForum",
+      utube:""
     }
   },
   {
@@ -42,18 +47,42 @@ const projects = [
     description:
       "A mobile-friendly business web application using React and Mysql.",
     links: {
-      site: "https://github.com/Rebiya/Garage.git",
-      github: "https://github.com/Rebiya/Garage.git"
+      site: "https://mygaragehub.onrender.com/",
+      github: "https://github.com/Rebiya/Garage.git",
+      utube:"https://youtu.be/odORMB_daIk"
     }
   },
   {
     img: project6,
     title: "Project #5",
     description:
-      "A Real Estate full-stack web app using react.js, calendly and ASP.NET.",
+      "A Real Estate full-stack web app using react.js, calendly and Node.js.",
+    links: {
+      site: "https://realestate-rebu.netlify.app/",
+      github: "https://github.com/Rebiya/Real-Estate.git",
+      utube:"https://youtu.be/UuRmdEgsE14"
+    }
+  },
+    {
+    img: project7,
+    title: "Project #6",
+    description:
+      "A kids-accessories app to suggest fresh mothers which product is better,react.js,node.js,mysql,stripe,MistralAI.",
     links: {
       site: "https://github.com/Rebiya/Real-Estate.git",
-      github: "https://github.com/Rebiya/Real-Estate.git"
+      github: "https://github.com/Rebiya/kids-accessories-Ecommerce.git",
+      utube:"https://youtu.be/Y3R7-EHfLJ8"
+    }
+  },
+   {
+    img: project8,
+    title: "Project #7",
+    description:
+      " business license is a required step for operating a commercial enterprise,built with typescript,react.js,node.js,mysql.",
+    links: {
+      site: "https://csbusinesslicensing.netlify.app/",
+      github: "https://github.com/Rebiya/customerService.git",
+      utube:"https://youtu.be/YwpkcgIzUrE"
     }
   }
 ];
@@ -95,7 +124,14 @@ const Portfolio = () => {
                   className="px-4 py-2 bg-slate-600 text-gray-200 rounded-lg hover:bg-slate-700
                                         transition duration-300"
                 >
-                  <AiOutlineGithub />
+                  <AiOutlineGithub size={30}/>
+                </a>
+                  <a
+                  href={project.links.utube}
+                  className="px-4 py-2 bg-slate-600 text-gray-200 rounded-lg hover:bg-slate-700
+                                        transition duration-300"
+                >
+                  <AiOutlineYoutube size={30} />
                 </a>
               </div>
             </div>
