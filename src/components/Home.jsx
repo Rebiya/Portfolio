@@ -3,7 +3,7 @@ import profilepic from "./../assets/loved.png";
 import { TypeAnimation } from "react-type-animation";
 import ShinyEffect from "./ShinyEffect";
 import { Link } from "react-router-dom";
-import cv from "./../assets/MyCv.png"
+import cv from "./../assets/Resume.pdf"
 import {
   AiOutlineGithub,
   AiOutlineInstagram,
@@ -67,24 +67,25 @@ const Hero = () => {
             transition={{ duration: 1, delay: 1.5 }}
             className="flex flex-row items-center gap-6 my-4 md:mb-0"
           >
-            <motion.button
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.3)"
-              }}
-              className="z-10 cursor-pointer font-bold text-gray-200 md:w-auto p-4 border
-               border-purple-400 rounded-xl"
-              onClick={() => {
-                const link = document.createElement("a");
-                link.href = cv; 
-                link.download = "MyCv.png"; 
-                document.body.appendChild(link); 
-                link.click(); 
-                document.body.removeChild(link); 
-              }}
-            >
-              Download CV
-            </motion.button>
+           <motion.button
+  whileHover={{
+    scale: 1.05,
+    boxShadow: "0px 0px 8px rgba(0, 0, 0, 0.3)"
+  }}
+  className="z-10 cursor-pointer font-bold text-gray-200 md:w-auto p-4 border border-purple-400 rounded-xl"
+  onClick={() => {
+    const link = document.createElement("a");
+    link.href = cv; 
+    link.download = "Rebiya_Musema_Resume.pdf"; // Changed to PDF and better filename
+    link.target = "_blank"; // Optional: open in new tab
+    link.rel = "noopener noreferrer"; // Security best practice
+    document.body.appendChild(link); 
+    link.click(); 
+    document.body.removeChild(link); 
+  }}
+>
+  Download CV
+</motion.button>
             ;
             <div className="flex gap-6 flex-row text-4xl md:text-6xl text-purple-400 z-20">
               <motion.a

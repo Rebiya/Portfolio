@@ -68,7 +68,7 @@ const Contact = () => {
             <div className="flex mt-10 items-center gap-7">
               <div className="bg-gray-800/40 p-4 rounded-lg hover:scale-105 hover:shadow-lg hover:shadow-purple-500 transition-transform duration-300">
                 <h3 className="md:text-4xl text-2xl font-semibold text-white">
-                  5<span>+</span>
+                  8<span>+</span>
                 </h3>
                 <p className="text-xs md:text-base">
                   <span>Projects</span>
@@ -77,7 +77,7 @@ const Contact = () => {
 
               <div className="bg-gray-800/40 p-5 rounded-lg hover:scale-105 hover:shadow-lg hover:shadow-purple-500 transition-transform duration-300">
                 <h3 className="md:text-4xl text-2xl font-semibold text-white">
-                  6 M<span>+</span>
+                  1 yr<span>+</span>
                 </h3>
                 <p className="text-xs md:text-base">
                   <span>years of experience</span>

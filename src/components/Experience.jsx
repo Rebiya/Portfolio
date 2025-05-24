@@ -6,28 +6,43 @@ const experiences = [
   {
     company: "Addis Ababa University Learning Projects",
     period: "2022 - Present",
-    description: "Human Resource and Student Management System."
+    description: "Human Resource and Student Management System using java,mysql."
   },
   {
     company: "Evangadi Bootcamp Learning Projects",
-    period: "Present",
+    period: "2024",
     description:
-      "Amazon and Netflix Clone, Evangadi Forum, Abe Garage Business model full Stack applications."
+      "Amazon and Netflix Clone, Evangadi Forum question and answer platform fullstack website."
   },
   {
     company: "Broker Company as FreeLancer",
-    period: "2025",
-    description: "House and Car Rental and Sale static website."
+    period: "2024",
+    description: "RealEstate Management Full-Stack website, using React, Node.js, Express, and MySQL."
   },
   {
     company: "Construction Company as FreeLancer",
-    period: "2025",
+    period: "2024",
     description: "Human Resource Management Full-Stack website."
   },
   {
     company: "MiniMarket app as FreeLancer",
     period: "2025",
     description: "Description of the mini market and goods Static website."
+  },
+  {
+    company: "Abe Garage Business as FreeLancer",
+    period: "2025",
+    description: "Abe Garage Business model Full-Stack website using React, Node.js, Express, and MySQL."
+  },
+  {
+    company: "Perfonet Technology as intern",
+    period: "2025",
+    description: "business licensing and registration system using typescript,react,express,MySQL."
+  },
+  {
+    company: "Addis Ababa University E-commerce project",
+    period: "2025",
+    description: "yene kids accessories website using React, Node.js, Express, and MySQL."
   }
 ];
 

@@ -61,35 +61,7 @@ const About = () => {
           enhancing user interfaces to ensure seamless functionality.
         </motion.p>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1.5 }}
-          className="grid grid-cols-2 gap-2 text-center"
-        >
-          <div>
-            <p>
-              <strong>Birthday:</strong> 05 Oct 2003
-            </p>
-            <p>
-              <strong>City:</strong> Addis Ababa, Ethiopia
-            </p>
-            <p>
-              <strong>Freelance:</strong> Available
-            </p>
-          </div>
-          <div>
-            <p>
-              <strong>Phone:</strong> +251 993044432
-            </p>
-            <p>
-              <strong>Email:</strong> rebum.19@gmail.com
-            </p>
-            <p>
-              <strong>Age:</strong> 21
-            </p>
-          </div>
-        </motion.div>
+     
       </motion.div>
 
       {/* Tech Stack Section */}
@@ -108,7 +80,6 @@ const About = () => {
         <DiReact className="text-blue-500" />
         <FaNodeJs className="text-green-500" />
         <SiCplusplus className="text-blue-800" />
-        <SiDotnet className="text-purple-500" />
         <SiExpress className="text-gray-400" />
         <SiTailwindcss className="text-teal-400" />
         <FaBootstrap className="text-purple-600" />
