@@ -69,7 +69,7 @@ const projects = [
     description:
       "A kids-accessories app to suggest fresh mothers which product is better,react.js,node.js,mysql,stripe,MistralAI.",
     links: {
-      site: "https://github.com/Rebiya/Real-Estate.git",
+      site: "https://kids-accessories-ecommerce-5.onrender.com/",
       github: "https://github.com/Rebiya/kids-accessories-Ecommerce.git",
       utube:"https://youtu.be/Y3R7-EHfLJ8"
     }
